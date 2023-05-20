@@ -1,9 +1,12 @@
-//console.log("hello");
-function add(n1, n2, startLine) {
-    var res = n1 + n2;
-    console.log(startLine + res);
-}
-var num1 = 2;
-var num2 = 2;
-var startLine = "Sum is ";
-add(num1, num2, startLine);
+//you can provide object type as below
+var person = {
+    name: "arpit",
+    age: 25,
+};
+// if you not provide then typescript infered typed for this
+var person2 = {
+    name: "aman",
+    age: 20,
+};
+console.log(person.name);
+console.log(person2.name);

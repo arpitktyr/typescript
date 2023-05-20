@@ -1,13 +1,15 @@
-//console.log("hello");
+let userInput: unknown;
+let userName: string;
 
-function add(n1:number,n2:number,startLine:string){
-
-   const res= n1+n2;
-   console.log( startLine + res);
+userInput = 5;
+userInput = 'Max';
+if (typeof userInput === 'string') {
+  userName = userInput;
 }
 
-const num1=2;
-const num2=2;
-const startLine="Sum is : "
+function generateError(message: string, code: number): never {
+  throw { message: message, errorCode: code };
+  // while (true) {}
+}
 
-add(num1,num2,startLine)
+generateError('An error occurred!', 500);
