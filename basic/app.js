@@ -1,12 +1,12 @@
-//you can provide object type as below
-var person = {
-    name: "arpit",
-    age: 25,
-};
-// if you not provide then typescript infered typed for this
-var person2 = {
-    name: "aman",
-    age: 20,
-};
-console.log(person.name);
-console.log(person2.name);
+var userInput;
+var userName;
+userInput = 6;
+userInput = 'Max';
+if (typeof userInput === 'string') {
+    userName = userInput;
+}
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
+    // while (true) {}
+}
+generateError('An error occurred!', 500);
